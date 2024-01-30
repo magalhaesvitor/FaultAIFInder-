@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<robot name="drone_description" xmlns:xacro="http://ros.org/wiki/xacro">
+	
+    <xacro:include filename="base.xacro" />
+    <xacro:include filename="joints.xacro" />
+    <xacro:include filename="propellers.xacro" />
+    <xacro:include filename="zenmuse.xacro" />
+
+</robot>

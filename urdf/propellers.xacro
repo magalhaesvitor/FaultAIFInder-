@@ -1,0 +1,172 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+	<!-- ============ FR PROPELLER LINK ============ -->
+	<link
+		name="fr_prop_link">
+		<inertial>
+		<origin
+			xyz="0.00228621059042466 -0.000604146249716386 -0.0318658213695621"
+			rpy="0 0 0" />
+		<mass
+			value="0.0517742689956703" />
+		<inertia
+			ixx="0.00020810059955811"
+			ixy="-0.000184191765063913"
+			ixz="-9.16178396754691E-06"
+			iyy="0.000185580068186671"
+			iyz="-9.44332350493997E-06"
+			izz="0.000383998449916041" />
+		</inertial>
+		<visual>
+		<origin
+			xyz="0 0 0"
+			rpy="0 0 0" />
+		<geometry>
+			<mesh
+			filename="package://drone_description/meshes/fr_prop_link.STL" />
+		</geometry>
+		<material
+			name="">
+			<color
+			rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+		</material>
+		</visual>
+		<collision>
+		<origin
+			xyz="0 0 0"
+			rpy="0 0 0" />
+		<geometry>
+			<mesh
+			filename="package://drone_description/meshes/fr_prop_link.STL" />
+		</geometry>
+		</collision>
+	</link>
+
+	<!-- ============ FL PROPELLER LINK ============ -->
+	<link
+		name="fl_prop_link">
+		<inertial>
+		<origin
+			xyz="0.00228581969045111 0.00060169080665684 -0.0318660775251255"
+			rpy="0 0 0" />
+		<mass
+			value="0.0517760704391253" />
+		<inertia
+			ixx="9.8918195644481E-05"
+			ixy="-0.000155099063110766"
+			ixz="-2.34158800542053E-05"
+			iyy="0.000296242182126736"
+			iyz="-1.27924825727884E-05"
+			izz="0.00038259207672918" />
+		</inertial>
+		<visual>
+		<origin
+			xyz="0 0 0"
+			rpy="0 0 0" />
+		<geometry>
+			<mesh
+			filename="package://drone_description/meshes/fl_prop_link.STL" />
+		</geometry>
+		<material
+			name="">
+			<color
+			rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+		</material>
+		</visual>
+		<collision>
+		<origin
+			xyz="0 0 0"
+			rpy="0 0 0" />
+		<geometry>
+			<mesh
+			filename="package://drone_description/meshes/fl_prop_link.STL" />
+		</geometry>
+		</collision>
+	</link>
+
+	<!-- ============ BR PROPELLER LINK ============ -->
+	<link
+		name="br_prop_link">
+		<inertial>
+		<origin
+			xyz="-0.00232088263222802 -0.000444276465700444 -0.0318661799537909"
+			rpy="0 0 0" />
+		<mass
+			value="0.0517759661201676" />
+		<inertia
+			ixx="9.74094714604786E-05"
+			ixy="-0.000154192657922875"
+			ixz="2.30593067513961E-05"
+			iyy="0.000297682090921109"
+			iyz="1.24406886381546E-05"
+			izz="0.000382660292259361" />
+		</inertial>
+		<visual>
+		<origin
+			xyz="0 0 0"
+			rpy="0 0 0" />
+		<geometry>
+			<mesh
+			filename="package://drone_description/meshes/br_prop_link.STL" />
+		</geometry>
+		<material
+			name="">
+			<color
+			rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+		</material>
+		</visual>
+		<collision>
+		<origin
+			xyz="0 0 0"
+			rpy="0 0 0" />
+		<geometry>
+			<mesh
+			filename="package://drone_description/meshes/br_prop_link.STL" />
+		</geometry>
+		</collision>
+	</link>
+
+	<!-- ============ BL PROPELLER LINK ============ -->
+	<link
+		name="bl_prop_link">
+		<inertial>
+		<origin
+			xyz="-0.00232102854999633 0.000441469285262786 -0.031866208920347"
+			rpy="0 0 0" />
+		<mass
+			value="0.0517760690289633" />
+		<inertia
+			ixx="9.70174132751842E-05"
+			ixy="-0.000154518358180511"
+			ixz="1.87971058580249E-05"
+			iyy="0.000297452292085239"
+			iyz="1.00474312963819E-05"
+			izz="0.000383284621812351" />
+		</inertial>
+		<visual>
+		<origin
+			xyz="0 0 0"
+			rpy="0 0 0" />
+		<geometry>
+			<mesh
+			filename="package://drone_description/meshes/bl_prop_link.STL" />
+		</geometry>
+		<material
+			name="">
+			<color
+			rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+		</material>
+		</visual>
+		<collision>
+		<origin
+			xyz="0 0 0"
+			rpy="0 0 0" />
+		<geometry>
+			<mesh
+			filename="package://drone_description/meshes/bl_prop_link.STL" />
+		</geometry>
+		</collision>
+	</link>
+
+</robot>
