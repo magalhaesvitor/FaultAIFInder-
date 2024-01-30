@@ -1,0 +1,1 @@
+controller_joint_names: ['', 'fr_prop_joint', 'fl_prop_joint', 'br_prop_joint', 'bl_prop_joint', 'arm_one_joint', 'arm_two_joint', 'camera_joint', ]
