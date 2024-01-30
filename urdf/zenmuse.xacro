@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+	
+		<!-- ============ ARM ONE LINK ============ -->
+		<link
+			name="arm_one_link">
+			<inertial>
+			<origin
+				xyz="-0.0275982252224184 -0.0046307535698818 -0.0438910198457915"
+				rpy="0 0 0" />
+			<mass
+				value="0.0498847677411126" />
+			<inertia
+				ixx="3.50342194631533E-05"
+				ixy="-3.7826275192224E-06"
+				ixz="-2.28307688907572E-05"
+				iyy="5.69431151096246E-05"
+				iyz="-3.83081389081462E-06"
+				izz="2.81513689104768E-05" />
+			</inertial>
+			<visual>
+			<origin
+				xyz="0 0 0"
+				rpy="0 0 0" />
+			<geometry>
+				<mesh
+				filename="package://drone_description/meshes/arm_one_link.STL" />
+			</geometry>
+			<material
+				name="">
+				<color
+				rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+			</material>
+			</visual>
+			<collision>
+			<origin
+				xyz="0 0 0"
+				rpy="0 0 0" />
+			<geometry>
+				<mesh
+				filename="package://drone_description/meshes/arm_one_link.STL" />
+			</geometry>
+			</collision>
+		</link>
+		
+		<!-- ============ ARM TWO LINK ============ -->
+		<link
+			name="arm_two_link">
+			<inertial>
+			<origin
+				xyz="0.0357412876512809 -0.00170781054391012 0.000117767265252061"
+				rpy="0 0 0" />
+			<mass
+				value="0.0326792841533979" />
+			<inertia
+				ixx="3.8181753059861E-05"
+				ixy="1.12770263430845E-05"
+				ixz="-2.4216171249835E-07"
+				iyy="3.01112818927873E-05"
+				iyz="5.68241831366402E-07"
+				izz="6.53869048673944E-05" />
+			</inertial>
+			<visual>
+			<origin
+				xyz="0 0 0"
+				rpy="0 0 0" />
+			<geometry>
+				<mesh
+				filename="package://drone_description/meshes/arm_two_link.STL" />
+			</geometry>
+			<material
+				name="">
+				<color
+				rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+			</material>
+			</visual>
+			<collision>
+			<origin
+				xyz="0 0 0"
+				rpy="0 0 0" />
+			<geometry>
+				<mesh
+				filename="package://drone_description/meshes/arm_two_link.STL" />
+			</geometry>
+			</collision>
+		</link>
+
+		<!-- ============ CAMERA LINK ============ -->
+		<link
+			name="camera_link">
+			<inertial>
+			<origin
+				xyz="-0.00804648665789653 0.0369732181362619 -0.00076184698056192"
+				rpy="0 0 0" />
+			<mass
+				value="0.36349979485356" />
+			<inertia
+				ixx="0.00022688741131706"
+				ixy="-2.16219970412951E-05"
+				ixz="1.16359838977465E-07"
+				iyy="0.000369363723647684"
+				iyz="4.27923991833458E-07"
+				izz="0.000396225584343995" />
+			</inertial>
+			<visual>
+			<origin
+				xyz="0 0 0"
+				rpy="0 0 0" />
+			<geometry>
+				<mesh
+				filename="package://drone_description/meshes/camera_link.STL" />
+			</geometry>
+			<material
+				name="">
+				<color
+				rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+			</material>
+			</visual>
+			<collision>
+			<origin
+				xyz="0 0 0"
+				rpy="0 0 0" />
+			<geometry>
+				<mesh
+				filename="package://drone_description/meshes/camera_link.STL" />
+			</geometry>
+			</collision>
+		</link>
+
+</robot>

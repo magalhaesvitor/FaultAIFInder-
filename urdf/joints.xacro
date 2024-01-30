@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+   
+	<!-- By the conventions of ROS urdf/tf, left side is positive y axis, 
+		 as so, side parameter is 1 if left, -1 if right-->
+
+	<!-- ============ BASE JOINT ============ -->
+	<joint 
+		name="base_joint" 
+		type="fixed">
+		<origin xyz="0 0 0" rpy="0 0 0" />
+		<parent link="base_link" />
+		<child link="virtual_base_link" />
+	</joint>
+
+	<!-- ============ FR PROPELLER JOINT ============ -->
+	<joint
+		name="fr_prop_joint"
+		type="continuous">
+		<origin
+		xyz="0.28386 -0.36292 -0.024736"
+		rpy="0 0 0" />
+		<parent link="base_link" />
+		<child link="fr_prop_link" />
+		<axis
+		xyz="0.071515 -0.018874 -0.99726" />
+	</joint>
+	<!-- ============ FL PROPELLER JOINT ============ -->
+	<joint
+		name="fl_prop_joint"
+		type="continuous">
+		<origin
+		xyz="0.28386 0.36292 -0.024736"
+		rpy="0 0 0" />
+		<parent link="base_link" />
+		<child link="fl_prop_link" />
+		<axis
+		xyz="0.071515 0.018874 -0.99726" />
+	</joint>
+	<!-- ============ BR PROPELLER JOINT ============ -->
+	<joint
+		name="br_prop_joint"
+		type="continuous">
+		<origin
+		xyz="-0.30489 -0.31528 -0.024736"
+		rpy="0 0 0" />
+		<parent link="base_link" />
+		<child link="br_prop_link" />
+		<axis
+		xyz="-0.072653 -0.013861 -0.99726" />
+	</joint>
+	<!-- ============ BL PROPELLER JOINT ============ -->
+	<joint
+		name="bl_prop_joint"
+		type="continuous">
+		<origin
+		xyz="-0.30489 0.31529 -0.024736"
+		rpy="0 0 0" />
+		<parent link="base_link" />
+		<child link="bl_prop_link" />
+		<axis
+		xyz="-0.072653 0.013861 -0.99726" />
+	</joint>
+
+	<!-- ============ ARM ONE JOINT ============ -->
+	<joint
+		name="arm_one_joint"
+		type="continuous">
+		<origin
+		xyz="0.1262 0 -0.0519"
+		rpy="0 0 0" />
+		<parent
+		link="base_link" />
+		<child
+		link="arm_one_link" />
+		<axis
+		xyz="0 0 -1" />
+	</joint>
+	<!-- ============ ARM TWO JOINT ============ -->
+	<joint
+		name="arm_two_joint"
+		type="continuous">
+		<origin
+		xyz="-0.061989 -0.010401 -0.10386"
+		rpy="0 0 0" />
+		<parent
+		link="arm_one_link" />
+		<child
+		link="arm_two_link" />
+		<axis
+		xyz="-0.98621 -0.16548 0" />
+	</joint>
+	<!-- ============ CAMERA JOINT ============ -->
+	<joint
+		name="camera_joint"
+		type="continuous">
+		<origin
+		xyz="0.073433 -0.026712 0.00059662"
+		rpy="0 0 0" />
+		<parent
+		link="arm_two_link" />
+		<child
+		link="camera_link" />
+		<axis
+		xyz="-0.16546 0.98609 -0.015497" />
+	</joint>
+
+</robot>
